@@ -1,4 +1,4 @@
-# Multiple PDF reader script
+# Batch PDF reader script
 -
 
 <p align="left">
