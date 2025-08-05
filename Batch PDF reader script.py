@@ -42,10 +42,13 @@ while True:
                     if texto_pdf.strip('"\''):
                         print(f"{nombre_elemento}\n")
                         print(texto_pdf)
-                        print("------------------------------------\n")
+                        print("------------------------------------")
                 except (fitz.FileDataError, PermissionError, IOError) as error_pdf:
                     # Si ocurre un error, continúa con el siguiente archivo
                     continue
+        
+        # Salto de línea para el nuevo comienzo
+        print()
     
     # Inicia el procesamiento desde el directorio raíz
     procesar_directorio(ruta_dir)
